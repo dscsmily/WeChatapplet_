@@ -1,0 +1,102 @@
+/* pages/poll/poll.wxss */
+page{
+  
+    background-color:#efefef;
+}
+.top{ 
+padding: 10px;      
+background-color: #fff; 
+-webkit-box-shadow: 0px 1px 3px #ccc;  
+-moz-box-shadow: 0px 1px 3px #ccc;  
+box-shadow: 0px 1px 3px #ccc;  
+}
+
+.inputView .input{ 
+margin: 0px auto;
+background-color: #f1f1f1;
+border-radius:8px;
+font-size: 16px;
+padding: 5px 0px 5px 10px;
+}
+.cont {  position: relative; height: 53px;border-bottom:1px solid #ccc;}
+
+.del{ position: absolute; right: 0px; background-color: #48c23d;
+color: #fff;
+height: 52px;
+padding: 0px 10px;
+z-index: 0;
+line-height: 52px;
+top: 0px;}
+
+.chace{
+width: 100%;
+left: 0px;
+top: 0px;
+position: absolute;z-index: 1;
+background-color: #fff;
+padding: 15px 0px;
+}
+.chace text{ color: #888888;font-size: 16px;display: inline-block; margin-bottom: -5px; line-height: 25px; } 
+.chace .pic{ width: 20px; height: 20px; float: right} 
+.add{ text-align: center; font-size: 18px; color: #363636;
+padding: 15px 0px 5px 0px;
+} 
+.chace input{display: inline-block; vertical-align: top;
+color: #888888;font-size: 16px; 
+}
+ 
+
+
+.addcont{
+-webkit-box-shadow: 0px 1px 3px #ccc;  
+-moz-box-shadow: 0px 1px 3px #ccc;  
+box-shadow: 0px 1px 3px #ccc; 
+margin: 20px 10px; 
+background-color: #fff;
+padding: 0px 5px;
+}
+.sttime {
+    padding: 15px 5px;
+    border-bottom:1px solid #ccc;
+}
+.sttime .pic{ width: 20px; height: 20px; margin-bottom: -4px;}
+.sttime text{
+    padding-left: 5px;
+color: #888888;font-size: 17px;
+}
+.sttime .input{ 
+display: inline-block;
+vertical-align: bottom;
+line-height: 10px;
+margin-bottom: -2px;
+color: #888888;
+padding-left: 10px;
+font-size: 16px;}
+
+
+
+.submitbut{ 
+    padding: 20px 0px;
+position: fixed;
+z-index: 100000;
+bottom: 0px;
+width: 100%;
+text-align: center;
+background-color:#efefef;
+font-size: 20px;
+ }
+.submitbut navigator{
+padding: 10px 0px;
+}
+
+.submitbut .but{ width: 80%; 
+background-color: #ffbe00;
+color:#fff;
+margin: 0px auto;
+border-radius:10px;}
+
+ 
+
+
+.fqco{ font-size: 16px; padding-top: 10px; color:#363636; text-decoration: underline;}
+.fqco navigator{  width: auto; display: inline-block;}

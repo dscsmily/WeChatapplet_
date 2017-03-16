@@ -1,0 +1,49 @@
+<scroll-view scroll-y="true"  style="height:{{winHeight - 102}}px;">
+
+<view class='top'>
+    <view class="inputView">
+        <input class="input"  placeholder="请填写投票主题" placeholder-style="color: #888888"/>
+    </view>
+  
+  <view wx:for="{{imagePaths}}" class='chooseimage'> 
+    <view class='cont' style="{{item.disStyle}}">  
+        <view class="chace" style="{{item.txtStyle}}" bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE"  data-index="{{index}}">
+            <input style="width:{{winWidth - 90}}px;" placeholder="选项{{index+1}}" class="input"/>
+            <image data-id="{{index}}" class='pic' src="{{item.src||'/image/2.jpg'}}" bindtap="chooseimage"></image>
+        </view> 
+        <view class="del"  data-index="{{index}}" catchtap="delcont">删除</view>
+    </view> 
+  </view>
+
+
+     <view class="add" bindtap='additem'> 
+       <text> +添加选项</text>
+    </view>
+
+
+</view>
+
+<view class='addcont'>
+    <view class='sttime'>
+        <image class='pic' src="/image/4.jpg"></image><text>截止日期</text>
+        <input style="width:{{winWidth - 160}}px;"  class="input"/>
+    </view>
+
+    <view class='sttime'>
+        <image class='pic' src="/image/3.jpg"></image><text>截止时间</text>
+        <input style="width:{{winWidth - 160}}px;" class="input"/>
+    </view>
+
+    <view class='sttime'>
+         <radio value="单选" checked=""/>单选       
+         <radio style='margin-left:30px;' value="多选" checked=""/>多选（2个以上）
+    </view>
+</view>
+
+</scroll-view>
+
+<view class='submitbut'>
+      <view class='but'> <navigator url="" hover-class="navigator-hover" >创建投票</navigator></view>
+      <view class='fqco'>
+      <navigator url="/pages/det/det" hover-class="navigator-hover" >创建说明</navigator></view>
+</view>

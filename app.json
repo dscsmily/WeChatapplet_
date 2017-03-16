@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/poll/poll",   
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "微投票",
+    "navigationBarTextStyle":"#fff"
+  }
+}
